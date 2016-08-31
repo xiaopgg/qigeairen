@@ -1,4 +1,4 @@
 # qigeairen
-##±¾ÏîÄ¿Ö÷ÒªÊµÏÖÁËÊ¹ÓÃMVP¼Ü¹¹ÊµÏÖµÇÂ¼
-*·â×°ÁËBasePresenter ºÍ MVPBaseActivity
+##æœ¬é¡¹ç›®ä¸»è¦å®ç°äº†ä½¿ç”¨MVPæ¶æ„å®ç°ç™»å½•
+* å°è£…äº†BasePresenter å’Œ MVPBaseActivity
 
