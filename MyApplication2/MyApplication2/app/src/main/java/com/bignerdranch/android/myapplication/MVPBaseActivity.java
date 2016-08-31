@@ -17,6 +17,7 @@ public abstract class MVPBaseActivity<V,T extends BasePesenter<V>> extends AppCo
         super.onCreate(savedInstanceState, persistentState);
         mPresenter = createPresenter();
         mPresenter.attachView((V) this);
+
     }
 
     @Override

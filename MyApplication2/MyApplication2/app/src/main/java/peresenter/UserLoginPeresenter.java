@@ -13,30 +13,23 @@ import view.UserLoginView;
 /**
  * Created by Administrator on 2016/8/30.
  */
-public class UserLoginPeresenter {
+public class UserLoginPeresenter extends BasePesenter<UserLoginView>{
     private UserLoginBiz mUserLoginBiz;
-    private UserLoginView mLoginView;
+  //  private UserLoginView mLoginView;
     private Handler mHandler = new Handler();
-
-/*    public UserLoginPeresenter(UserLoginView userLoginView){
-
-        this.mUserLoginBiz = new UserLoginBizImpl();
-
-    }*/
 
 
     public UserLoginPeresenter(UserLoginView mUserLoginView){
         this.mUserLoginBiz= new UserLoginBizImpl();
-        this.mLoginView=mUserLoginView;
     }
     public void login(){
-        mUserLoginBiz.login(mLoginView.getUsername(),mLoginView.getPwd(), new OnLoginListener() {
+        mUserLoginBiz.login(mViewRef.get().getUsername(),mViewRef.get().getPwd(), new OnLoginListener() {
             @Override
             public void loginsucc(final User user) {
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
-                        mLoginView.toMain(user);
+                        mViewRef.get().toMain(user);
                     }
                 });
             }
@@ -46,7 +39,7 @@ public class UserLoginPeresenter {
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
-                        mLoginView.showFailMsg();
+                        mViewRef.get().showFailMsg();
                     }
                 });
             }
