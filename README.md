@@ -1,2 +1,4 @@
 # qigeairen
-MVP å®ç°ç™»å½•ï¼Œå°è£…äº†BasePresenterå’Œ MVPBaseActivity
+##±¾ÏîÄ¿Ö÷ÒªÊµÏÖÁËÊ¹ÓÃMVP¼Ü¹¹ÊµÏÖµÇÂ¼
+*·â×°ÁËBasePresenter ºÍ MVPBaseActivity
+
